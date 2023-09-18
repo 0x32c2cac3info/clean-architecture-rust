@@ -14,9 +14,9 @@ name = "animal_facts_api"
 path = "src/lib.rs"
 
 [dependencies]
-actix-web = { version = "4", features = ["openssl"] }
+actix-web = { version = "4.4.0", features = ["openssl"] }
 actix-rt = "~2.7"
-actix-http = "~3.0"
+actix-http = { version = "3.4.0", features = ["openssl"] }
 log = "~0.4.0"
 env_logger = "~0.9"
 failure = "~0.1"
@@ -27,7 +27,7 @@ diesel = { version = "~1.4", features = ["postgres", "r2d2", "uuidv07"] }
 diesel_migrations = "~1.4"
 dotenv = "~0.15"
 r2d2 = "~0.8"
-tokio = { version = "~1.18", features = ["full"] }
+tokio = { version = "1.32.0", features = ["full"] }
 thiserror = "~1.0"
 derive_more = "~0.99"
 reqwest={version="0.11", features = ["json"]}
